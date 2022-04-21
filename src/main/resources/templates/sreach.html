@@ -13,6 +13,11 @@
     </div>
     <div th:if="${message}" class = "alert alert-success text-center">
         [[${message}]]
+        <form th:action="@{/users/sreach}">
+            Name:
+            <input type="text" name="lastName" placeholder="lastName">
+            <input type="submit" value="Sreach">
+            </form>
     </div>
         <div>
             <table class = "table table-bordered">
